@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+    <link
+        href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://www.filepicker.io/api/file/90nGuyiBR2GweFk5xoEb'
+        rel='apple-touch-icon' type='image/png'>
+    <meta name='description' content='六角課程htmlCss-最終任務' />
+    <title>JQuery最終任務</title>
+
+    <meta property="og:title" content="FB的標題" />
+    <meta property="og:description" content="FB的描述">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="nav wrap">
+            <ul class="d-flex justify-content-end ">
+                <li><a href="#" class="fb"><img src="images/facebookIcon.png" alt="">粉絲團</a></li>
+                <li><a href="#" class="twitter"><img src="images/twitterIcon.png" alt="">追隨我們</a></li>
+            </ul>
+        </div>
+        <div class="navbar wrap d-flex justify-content-between">
+            <h1 class="logoIcon"><a href="#"><img src="images/logo.png" alt="六角學院"></a></h1>
+            <ul class="d-flex menu">
+                <li><a href="#">首頁</a></li>
+                <li class="dropdownBtn">
+                    <a href="#">產品介紹 <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown text-center">
+                        <li><a href="#">產品1</a></li>
+                        <li><a href="#">產品2</a></li>
+                        <li><a href="#">產品3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdownBtn">
+                    <a href="#">聯絡我們 <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown text-center">
+                        <li><a href="#">產學合作</a></li>
+                        <li><a href="#">報名課程</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Slider main container -->
+    <div class="banner wrap swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner-02.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner-03.png" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+        <div class="bannerText d-flex align-items-center">
+            <h2 class="text-white">
+                六角學院<br>讓您奠定良好的前端基礎
+            </h2>
+        </div>
+    </div>
+
+    <div class="featuredContent wrap">
+        <ul class="d-flex justify-content-between">
+            <li>
+                <div class="cardImg d-flex justify-content-center align-items-center">
+                    <a class="example-image-link" href="images/html.png" data-lightbox="example-1" data-title="HTML5 courses">
+                        <img class="example-image" src="images/html.png" alt="image-1" />
+                    </a>
+                </div>
+                <h3 class="text-center font-weight-bold">HTML5 基礎教學</h3>
+                <p class="text-justify">主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發。
+                </p>
+            </li>
+            <li>
+                <div class="cardImg d-flex justify-content-center align-items-center">
+                    <a class="example-image-link" href="images/rwd.png" data-lightbox="example-2" data-title="RWD courses">
+                        <img class="example-image" src="images/rwd.png" alt="image-1"/>
+                    </a>
+                </div>
+                <h3 class="text-center font-weight-bold">響應式網站設計</h3>
+                <p class="text-justify">響應式網站設計(Responsive web
+                    design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+            </li>
+            <li>
+                <div class="cardImg d-flex justify-content-center align-items-center">
+                    <a class="example-image-link" href="images/jQuery.png" data-lightbox="example-3" data-title="jQuery courses">
+                        <img class="example-image" src="images/jQuery.png" alt="image-1"/>
+                    </a>
+                </div>
+                <h3 class="text-center font-weight-bold">jQuery 實戰教學</h3>
+                <p>本課程有以下特色</p>
+                <p>．瞭解變數的使用方法</p>
+                <p>．學習基本數學運算方法</p>
+                <p>．套件的操作及運用</p>
+            </li>
+        </ul>
+    </div>
+    <div class="compare wrap">
+        <h3 class="text-center font-weight-bold">線上及實體課程的差異</h3>
+        <table class="text-left">
+            <tr class="font-weight-bold">
+                <th>項目</th>
+                <th>Hex School 線上課程</th>
+                <th>一般課程</th>
+                <th>實體課程</th>
+            </tr>
+
+            <tr>
+                <td>費用</td>
+                <td class="textWin">較低</td>
+                <td class="textWin">較低</td>
+                <td>較高</td>
+            </tr>
+            <tr>
+                <td>學習效果</td>
+                <td>一般</td>
+                <td class="textWin">較低</td>
+                <td class="textWin">很好</td>
+            </tr>
+            <tr>
+                <td>Code review</td>
+                <td class="textWin">有</td>
+                <td>無</td>
+                <td>不一定</td>
+            </tr>
+            <tr>
+                <td>課程更新速度</td>
+                <td class="textWin">普通</td>
+                <td class="textWin">普通</td>
+                <td>較慢</td>
+            </tr>
+
+            <tr>
+                <td>多次複習</td>
+                <td class="textWin">可</td>
+                <td>可</td>
+                <td>不可</td>
+            </tr>
+            <tr>
+                <td>字幕</td>
+                <td class="textWin">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+            </tr>
+        </table>
+    </div>
+    <div class="contactUs wrap">
+        <h3 class="text-white text-center">對我們的課程有興趣嗎？<br>歡迎留下您的資料</h3>
+        <form class="d-flex justify-content-between" action="" method="POST">
+            <textarea class="suggest" name="content" id="content" placeholder="請輸入對課程想法與建議"></textarea>
+            <div class="d-flex flex-column justify-content-between">
+                <div class="d-flex flex-column">
+                    <label class="points text-white" for="userName">姓名</label>
+                    <input class="data" type="text" name="userName" id="userName" placeholder="請輸入聯絡人姓名">
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="points text-white" for="tel">電話</label>
+                    <input class="data" type="text" name="tel" id="tel" placeholder="請輸入聯繫電話">
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="points text-white" for="email">信箱</label>
+                    <input class="data" type="text" name="email" id="email" placeholder="請輸入常用信箱">
+                </div>
+                <input class="submit text-white align-self-end" type="button" value="送出" onclick="sendEmail()">
+            </div>
+        </form>
+    </div>
+    <footer class="wrap d-flex justify-content-between">
+        <div class="footerLogo">
+            <img src="images/footerLogo.png" alt="">
+        </div>
+        <div class="contactInfo">
+            <p>聯絡我們：<span>hexschool@gmail.com</span></p>
+            <p>電話：<span>0999123456</span></p>
+        </div>
+    </footer>
+    <div class="goTop">
+        <a href="#">
+            <img src="images/top.png" alt="">
+        </a>
+    </div>
+    <div class="goTopText ">
+        小夫！我要上去了！
+    </div>
+
+    <script src="https://kit.fontawesome.com/de64203a13.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 2000,
+            },
+
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/smtp.js""></script>
+    <script>
+        function sendEmail() {
+            var mailContent = " 姓名:" + userName.value + '<br>'; mailContent += "電話:" + tel.value + '<br>'; mailContent
+                += "信箱:" + email.value + '<br>'; mailContent += "意見:" + content.value; Email.send({
+                    SecureToken: "0312ffd2-7422-4e47-9ef2-948b3fc865c2", To: 'test@eavision.com.tw', From: "test@eavision.com.tw"
+                    , Subject: "htmlCss最終任務-SMTPJS測試", Body: mailContent
+                }).then(message => alert(message)
+                );
+        }
+    </script>
+</body>
+
+</html>
